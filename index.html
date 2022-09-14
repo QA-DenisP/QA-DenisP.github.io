@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html>
+		<head> 
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<title>DenisP</title>
+			<link rel="stylesheet" href="main.css">
+<!-- 32×32 -->
+	 		<link rel="icon" href="favicon.ico">	 		
+		</head>
+		<body class="container">
+<!-- Поле для имени -->
+			<h1>Денис Пичугин</h1> 
+<!-- Деятельность -->
+			<h2>Quality assurance</h2> 
+<!-- Фото -->
+			<div class="item">
+				<img class="photo" src="me.JPG" width="170" height="170" alt="фото"> 
+			</div>
+<!-- Краткое описание -->
+			<p>Занимаюсь ручным тестированием сайтов и приложений.</p> 
+
+			<h3>Контакты</h3>
+<!-- Контакты -->
+			<div class="contacts"> 
+				<a href="mailto:den@98p.ru"><b>Mail</b></a>
+				<p><b>Mail, если не работает ссылка:</b> den@98p.ru</p>	
+				<a href="https://t.me/Den_Zeus"><b>Telegram</b></a> 
+				<a href="https://vk.com/d_zeus"><b>VK</b></a>
+			</div>
+<!-- Портфолио -->
+			<h3>Портфолио</h3>
+			<div class="info">
+				<a href="https://github.com/VISDP"><b>github.com</b></a>
+				
+				<a href="https://miro.com/app/board/uXjVPfQfMOg=/?share_link_id=655637988304"><b>Пример чек-листа в Miro</b></a>
+			</div>
+<!-- Кнопка -->
+			<button type="button">Маленькая JS кнопка</button> 
+			<script type="text/javascript" src="js.js"></script>
+			<br>
+<!-- Кнопка -->
+
+			<button class="collapsible"><h3>Обо мне</h3></button>
+				<div class="content">
+					<p>Привет! Меня зовут Денис. Я живу в Зеленограде. Занимаюсь ручным тестированием сайтов и приложений. На этом сайте-визитке Вы можете найти контакты для связи со мной и примеры моих работ.</p>
+					<p> Я придерживаюсь REST. Создаю чек-листы и тест-планы в Miro, Word, One Note. Работаю с Postman, Charles, Git Bash, Visual Studio Code, Sublime text, CI/CD, Kibana. Знаком с JSON, JS, HTML, Python, SQL. Имею опыт работы с Qase.io. Дополнительно владею Photoshop, Illustrator, Premier PRO.</p>	
+				</div>
+				<script>
+					let coll = document.getElementsByClassName('collapsible');
+					for (let i = 0; i < coll.length; i++){
+						coll[i].addEventListener('click', function() {
+							this.classList.toggle('active');
+							let content = this.nextElementSibling;
+							if (content.style.maxHeight) {
+								content.style.maxHeight = null;
+							}else{
+							content.style.maxHeight = content.scrollHeight + 'px'}
+						})
+					}
+				</script>
+		</body>
+
+	</html>

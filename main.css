@@ -1,0 +1,90 @@
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+/* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+/* Что делать при наведении на ссылку */
+a:hover {
+  color:#000000;
+}
+
+/* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+/* Свойства фотографии*/
+.photo {
+  border-radius: 5px;
+/* Радиус скругления */
+  border: 3px solid transparent;
+/* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+/* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD815;}
+  /*Фон*/
+  body{
+    background-image: url("Background2.png"); /* Фоновый цвет и фоновый рисунок*/
+    /*color: #fff; Цвет текста на странице*/
+    background-attachment: fixed; /* Фон страницы фиксируется */
+    background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+  /*background-color: #E5CAB7;*/
+}
+/*Стиль кнопки*/
+.collapsible {
+        background-color: #EFE6DA;
+        color: black;
+        cursor: pointer;
+        padding: 4px;
+        width: 450px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-radius: 3px;
+      } 
+      .active,
+      .collapsible:hover {
+        background-color: #EFE6DA;
+      }
+      .content {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        background-color: #EFE6DA;
+        border-radius: 3px;
+        width: 410px;
+      }
