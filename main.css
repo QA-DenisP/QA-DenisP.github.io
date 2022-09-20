@@ -60,7 +60,7 @@ h2 {
     background-image: url("Background2.png"); /* Фоновый цвет и фоновый рисунок*/
     /*color: #fff; Цвет текста на странице*/
     background-attachment: fixed; /* Фон страницы фиксируется */
-    background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+    background-repeat: no-repeat; /* Изображение повторяется по горизонтали */
     background-size: cover;
   /*background-color: #E5CAB7;*/
 }
