@@ -1,7 +1,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-}
+  }
 
 .container {
   padding: 0 40px;
@@ -14,6 +14,7 @@ a {
   text-decoration:none;
   margin-bottom: 1em;
   position: relative;
+  display:inline-block
 }
 
 /* Что делать при наведении на ссылку */
@@ -90,7 +91,4 @@ h2 {
         border-radius: 3px;
         width: 410px;
       }
-      a {
-        display: inline-block;
-        line-height: 2em;
-    }
+      
