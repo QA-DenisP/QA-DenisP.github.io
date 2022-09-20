@@ -10,12 +10,11 @@ body {
 
 /* Свойства ссылок */
 a {
-  display: block;
+  display:inline block;
   text-decoration:none;
   margin-bottom: 1em;
   position: relative;
-  display:inline-block
-}
+ }
 
 /* Что делать при наведении на ссылку */
 a:hover {
