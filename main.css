@@ -54,12 +54,14 @@ h2 {
 /* Эффект наведения на картинку */
 .photo:hover {
   border: 3px solid #FFD815;}
+
   /*Фон*/
   body{
     background-image: url("Background2.png"); /* Фоновый цвет и фоновый рисунок*/
     /*color: #fff; Цвет текста на странице*/
     background-attachment: fixed; /* Фон страницы фиксируется */
     background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+    background-size: cover;
   /*background-color: #E5CAB7;*/
 }
 /*Стиль кнопки*/
