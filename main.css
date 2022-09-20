@@ -10,9 +10,9 @@ body {
 
 /* Свойства ссылок */
 a {
-  display:inline block;
+  display: block;
   text-decoration:none;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   position: relative;
  }
 
